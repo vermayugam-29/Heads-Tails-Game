@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heads Tails Game</title>
+    <link rel="shortcut icon" href="heads-tailsIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-col items-center justify-center h-screen">
+    <div class="flex flex-col items-center justify-between gap-10">
+        <div class="flex flex-row gap-10">
+            <div id="head" class="bg-white flex flex-row items-center justify-center border-2 border-black rounded-full w-[100px] h-[100px]">
+                <h1 id="h" class="font-bold text-md">Heads</h1>
+            </div>
+            <div id="tail" class="bg-white flex flex-row items-center justify-center border-2 border-black rounded-full w-[100px] h-[100px]">
+                <h1 id="t" class="font-bold text-md">Tails</h1>
+            </div>   
+        </div>
+
+        <button id="flip" class="border-2 border-black rounded-lg w-[50px] bg-black text-white
+         hover:bg-white hover:text-black">
+            <span class="font-bold">Flip</span>
+        </button>
+
+        <div class="flex flex-col gap-4">
+            <h1>Head Count : <span id="hCnt">0</span></h1>
+            <h1>Tail Count : <span id="tCnt">0</span></h1>
+        </div>
+
+        <button id="reset" class="border-2 border-black rounded-lg w-[50px] bg-black text-white
+        hover:bg-white hover:text-black">Reset</button>
+    </div>
+</body>
+    <script src="script.js"></script>
+</html>
